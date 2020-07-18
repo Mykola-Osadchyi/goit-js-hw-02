@@ -8,12 +8,7 @@
 
 const checkForSpam = function (message) {
   const newMessage = message.toLowerCase();
-  let foundSpam;
-  if (
-    (foundSpam = newMessage.includes('spam') || newMessage.includes('sale'))
-  ) {
-  }
-  return foundSpam;
+  return newMessage.includes('spam') || newMessage.includes('sale');
 };
 
 /*
